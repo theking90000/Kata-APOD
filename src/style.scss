@@ -1,0 +1,103 @@
+@font-face {
+  font-family: Roboto;
+  src: url("../assets/roboto/Roboto-Black.ttf") format("ttf");
+}
+
+html,
+body {
+  font-family: Roboto;
+  min-height: 100vh;
+  padding: 0;
+  margin: 0;
+}
+
+#app {
+  position: relative;
+}
+
+#display {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all;
+  position: absolute;
+  width: 100%;
+}
+
+.loader {
+  border: 9px solid #f3f3f3;
+  border-top: 9px solid black;
+  border-radius: 50%;
+  animation: spin 1.3s ease-in-out infinite;
+  width: 60px;
+  height: 60px;
+
+  @keyframes spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+}
+
+.meta {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  .container {
+    width: 690px;
+    height: 150px;
+    background-color: aqua;
+    display: flex;
+    flex-direction: column;
+
+    &.top {
+      margin-top: 120px;
+      margin-bottom: auto;
+    }
+
+    &.bottom {
+      margin-bottom: 120px;
+      margin-top: auto;
+    }
+
+    &.right {
+      justify-content: flex-start;
+    }
+
+    &.left {
+      justify-content: flex-end;
+    }
+
+    .arrow {
+      display: flex;
+      flex-direction: row;
+
+      div {
+        cursor: pointer;
+        svg {
+          width: 32px;
+          height: 32px;
+        }
+      }
+    }
+
+    #arrowtop {
+      flex: 1;
+      width: 100%;
+      .right {
+        margin-left: auto;
+      }
+    }
+    #container-content {
+      flex: auto;
+    }
+
+    #arrowdown {
+      flex: 1;
+    }
+  }
+}

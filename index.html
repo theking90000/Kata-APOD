@@ -2,12 +2,24 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <link rel="icon" href="favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
+
+    <title>Kata-APOD</title>
   </head>
   <body>
-    <div id="app"></div>
+    <div id="app">
+      <div id="display">
+        <div class="loader"></div>
+      </div>
+      <div class="meta">
+        <div class="container">
+          <div id="arrow-top" class="arrow"></div>
+          <div id="container-content">b</div>
+          <div id="arrow-down" class="arrow"></div>
+        </div>
+      </div>
+    </div>
     <script type="module" src="/src/main.ts"></script>
   </body>
 </html>

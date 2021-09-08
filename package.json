@@ -9,5 +9,12 @@
   "devDependencies": {
     "typescript": "^4.3.2",
     "vite": "^2.5.4"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.36",
+    "@fortawesome/free-regular-svg-icons": "^5.15.4",
+    "@fortawesome/free-solid-svg-icons": "^5.15.4",
+    "colorthief": "^2.3.2",
+    "sass": "^1.39.0"
   }
 }
